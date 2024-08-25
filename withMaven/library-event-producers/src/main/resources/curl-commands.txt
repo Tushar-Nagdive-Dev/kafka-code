@@ -5,6 +5,11 @@ curl -i \
 -H "Content-Type: application/json" \
 -X POST http://localhost:8080/v1/libraryevent
 
+curl -i \
+-d '{"libraryEventId":null,"libraryEventType": "NEW","book":{"bookId":456,"bookName":"King of the ring","bookAuthor":"Tushar"}}' \
+-H "Content-Type: application/json" \
+-X POST http://localhost:8080/v1/libraryeventByApproach3
+
 PUT WITH ID - 1
 --------------
 curl -i \
